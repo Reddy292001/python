@@ -1,0 +1,17 @@
+import turtle as t
+t.speed(0)
+r = 50
+x = 0
+y = 0
+t.shape("turtle")
+colors = ["red", 'blue', 'yellow', 'orange', 'brown']
+for i in range(5):
+    t.pencolor(colors[i % 5])
+    t.circle(r)
+    r = r + 10
+    y = y - 10
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+t.done()
+
